@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="./style.css">
-    <title>To Do List</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Список справ</title>
+  </head>
+  <body>
     <div class="window">
-        <h1>Todo list</h1>
-        <input type="text" class="filter-input">
-        <div class="card"></div>
-        <div class="card completed"></div>
+      <h1>Todo list</h1>
+      <input type="text" class="filter-input" />
+      <div class="card">
+        <div class="corner-icons-container">
+          <svg class="icon">
+            <use href="./icons/sprite.svg#edit_icon"></use>
+          </svg>
+          <svg class="icon">
+            <use href="./icons/sprite.svg#trash_icon"></use>
+          </svg>
+        </div>
+        <span class="tag">домашні справи</span>
+        <h2 class="name">Купити продукти</h2>
+        <p class="description">
+          Скласти список необхідних продуктів та відвідати магазин
+        </p>
+        <button class="done-button">
+          <svg class="icon clipboard-icon">
+            <use href="./icons/sprite.svg#clipboard_icon"></use>
+          </svg>
+          Завершити
+        </button>
+      </div>
+      <div class="card completed">
+        <div class="corner-icons-container">
+          <svg class="icon">
+            <use href="./icons/sprite.svg#edit_icon"></use>
+          </svg>
+          <svg class="icon">
+            <use href="./icons/sprite.svg#trash_icon"></use>
+          </svg>
+        </div>
+        <span class="tag">спорт</span>
+        <h2 class="name">пройти прогулянку на свіжому повітрі</h2>
+        <p class="description">зібратись на прогулянку і пройтися в парку</p>
+        <button class="done-button">
+          <svg class="icon clipboard-icon">
+            <use href="./icons/sprite.svg#clipboard_icon"></use>
+          </svg>
+          Завершити
+        </button>
+      </div>
     </div>
-</body>
+  </body>
 </html>

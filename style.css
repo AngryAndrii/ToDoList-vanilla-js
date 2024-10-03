@@ -1,10 +1,80 @@
 :root {
-    --orange-color: #fc7b03;
-    --gray-color: #cccccc;
-    --black-color: #000000;
-    --light-gray: #f5f2f2;
-    --white-color: #ffffff;
+  --orange-color: #fc7b03;
+  --gray-color: #cccccc;
+  --black-color: #000000;
+  --light-gray: #f5f2f2;
+  --white-color: #ffffff;
+  --contur-color: #fbeb09;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.window {
+  width: 760px;
+  margin: 0 auto;
+  background-color: var(--gray-color);
+  padding: 10px;
+  margin-top: 20px;
 }
 
 /* complered - opacity 0.5
 text decoration strike-trought */
+.card {
+  position: relative;
+  background-color: var(--light-gray);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.completed:is(:not(.tag)) {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: #000000;
+}
+
+.corner-icons-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 10px;
+  right: 10px;
+  border: 1px solid tomato;
+  width: 50px;
+  height: 20px;
+}
+
+.tag {
+  border: 1px solid var(--orange-color);
+  font-weight: 500;
+  font-size: small;
+  color: var(--orange-color);
+}
+
+.done-button {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+  align-items: center;
+  border: none;
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  border-radius: 4px;
+  height: 25px;
+}
+
+.done-button:is(:hover, :focus) {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: 2px solid var(--contur-color);
+}
+
+.clipboard-icon {
+  fill: var(--white-color);
+}
