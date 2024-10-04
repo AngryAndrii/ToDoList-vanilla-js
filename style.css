@@ -38,6 +38,7 @@
 .tags-line > .tag:is(:hover, :focus) {
   transform: scale(1.1);
   transition: var(--anim);
+
 }
 
 /* complered - opacity 0.5
