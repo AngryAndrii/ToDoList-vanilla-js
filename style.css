@@ -5,6 +5,7 @@
   --light-gray: #f5f2f2;
   --white-color: #ffffff;
   --contur-color: #fbeb09;
+  --anim: all 0.4s ease-out;
 }
 
 * {
@@ -19,6 +20,26 @@
   margin-top: 20px;
 }
 
+.filter-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.tags-line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 7px;
+  row-gap: 10px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+.tags-line > .tag:is(:hover, :focus) {
+  transform: scale(1.1);
+  transition: var(--anim);
+}
+
 /* complered - opacity 0.5
 text decoration strike-trought */
 .card {
@@ -26,6 +47,7 @@ text decoration strike-trought */
   background-color: var(--light-gray);
   padding: 10px;
   margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .completed:is(:not(.tag)) {
@@ -73,6 +95,7 @@ text decoration strike-trought */
 .done-button:is(:hover, :focus) {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   outline: 2px solid var(--contur-color);
+  transition: var(--anim);
 }
 
 .clipboard-icon {
