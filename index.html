@@ -18,7 +18,10 @@
     <div class="window">
       <h1>Todo list</h1>
       <input type="text" class="filter-input" />
-      <div class="tags-line"><span class="tag">домашні справи</span><span class="tag">робота</span><span class="tag">спорт</span></div>
+      <div class="tags-line">
+        <span class="tag">домашні справи</span><span class="tag">робота</span
+        ><span class="tag">спорт</span>
+      </div>
       <div class="card">
         <div class="corner-icons-container">
           <svg class="icon">
@@ -59,6 +62,18 @@
           Завершити
         </button>
       </div>
+      <div class="add-block none">
+        <label for="" class="add-label">Заголовок<input type="text" /></label>
+        <label for="" class="add-label"
+          >Примітка<textarea name="" id=""></textarea>
+        </label>
+      </div>
+      <button class="done-button" id="add-button">
+        <svg class="icon clipboard-icon" id="add">
+          <use href="./icons/sprite.svg#plus_icon"></use>
+        </svg>
+        Додати справу
+      </button>
     </div>
   </body>
 </html>
