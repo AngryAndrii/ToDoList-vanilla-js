@@ -1,4 +1,5 @@
 import { addCard } from "./scripts/card.js";
+import { clearFunction } from "./scripts/helpers.js";
 
 const addButton = document.querySelector("#add-button");
 const addBlock = document.querySelector(".add-block");
@@ -18,12 +19,12 @@ addButton.addEventListener("click", (ev) => {
 returnButton.addEventListener("click", (ev) => {
   addBlock.classList.add("none");
   addButton.classList.remove("none");
+  clearFunction(newName, newDesc);
 });
-
-const getDataFromNew = () => {};
 
 saveButton.addEventListener("click", (ev) => {
   const name = newName.value;
   const descr = newDesc.value;
   addCard(name, descr);
+  clearFunction(newName, newDesc);
 });
