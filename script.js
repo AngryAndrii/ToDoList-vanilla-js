@@ -11,6 +11,9 @@ const saveButton = document.querySelector("#save");
 const newName = document.querySelector("#new-name");
 const newDesc = document.querySelector("#new-descr");
 
+// const doneButton = document.querySelector("#done-button");
+const cards = document.querySelectorAll(".card");
+
 addButton.addEventListener("click", (ev) => {
   addBlock.classList.remove("none");
   addButton.classList.add("none");
@@ -27,4 +30,20 @@ saveButton.addEventListener("click", (ev) => {
   const descr = newDesc.value;
   addCard(name, descr);
   clearFunction(newName, newDesc);
+  addBlock.classList.add("none");
+  addButton.classList.remove("none");
 });
+
+// doneButton.addEventListener("click", (e) => {
+//   console.log(e);
+// });
+
+// e.target.nodeName
+
+// testCard.addEventListener("click", (e) => {
+//   if (e.target.className === "done-button") {
+
+//   }
+// });
+
+console.log(cards);
