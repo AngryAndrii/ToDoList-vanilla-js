@@ -1,6 +1,9 @@
+import { verifyFunction } from "./helpers.js";
+
 const addBlock = document.querySelector(".add-block");
 
 export const addCard = (name, descr) => {
+  verifyFunction(name, descr);
   const tamplate = `<div class="card">
         <div class="corner-icons-container">
           <svg class="icon">
