@@ -6,6 +6,6 @@ export const clearFunction = (firstElem, secondElem) => {
 export const verifyFunction = (name, descr) => {
   if (name === "" || descr === "") {
     alert("please add name and descr, for adding a task");
-    return;
+    return null;
   }
 };
