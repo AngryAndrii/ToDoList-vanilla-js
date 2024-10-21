@@ -36,7 +36,7 @@
         <p class="description">
           Скласти список необхідних продуктів та відвідати магазин
         </p>
-        <button class="done-button" id="done-button">
+        <button data-action="done" class="done-button" id="done-button">
           <svg class="icon clipboard-icon">
             <use href="./icons/sprite.svg#clipboard_icon"></use>
           </svg>
@@ -55,7 +55,7 @@
         <span class="tag">спорт</span>
         <h2 class="name">пройти прогулянку на свіжому повітрі</h2>
         <p class="description">зібратись на прогулянку і пройтися в парку</p>
-        <button class="done-button" id="done-button">
+        <button data-action="done" class="done-button" id="done-button">
           <svg class="icon clipboard-icon">
             <use href="./icons/sprite.svg#clipboard_icon"></use>
           </svg>
@@ -69,20 +69,20 @@
         <label for="" class="add-label"
           >Примітка<textarea name="" id="new-descr"></textarea>
         </label>
-        <button class="done-button" id="return">
+        <button data-action="return" class="done-button" id="return">
           <svg class="icon clipboard-icon">
             <use href="./icons/sprite.svg#cross_icon"></use>
           </svg>
           Скасувати
         </button>
-        <button class="done-button" id="save">
+        <button data-action="save" class="done-button save-button" id="save">
           <svg class="icon clipboard-icon">
             <use href="./icons/sprite.svg#done_icon"></use>
           </svg>
           Зберегти
         </button>
       </div>
-      <button class="done-button" id="add-button">
+      <button data-action="add" class="done-button" id="add-button">
         <svg class="icon clipboard-icon" id="add">
           <use href="./icons/sprite.svg#plus_icon"></use>
         </svg>

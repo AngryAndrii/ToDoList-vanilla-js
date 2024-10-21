@@ -21,7 +21,7 @@ export const addCard = (name, descr) => {
         <p class="description">
         ${descr}
         </p>
-        <button class="done-button" id="done-button">
+        <button data-action="done" class="done-button" id="done-button">
           <svg class="icon clipboard-icon">
             <use href="./icons/sprite.svg#clipboard_icon"></use>
           </svg>
